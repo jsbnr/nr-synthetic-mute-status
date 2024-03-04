@@ -17,4 +17,3 @@ The script makes an API call to the New Relic graphQL API to gather the current 
     - DATACENTER: This is the data center the above acocunt is located, wither US or EU.
     - USERK_KEY: The user API key for gathering the mute status from the graphQL API. We advise using a [secure credential](https://docs.newrelic.com/docs/synthetics/synthetic-monitoring/using-monitors/store-secure-credentials-scripted-browsers-api-tests/) to pass the key. The User API key requires permissions to read muting rules.
 4. Update the `runScript()` function with your code. This function is run once the mute status has been derived.
-
