@@ -1,0 +1,26 @@
+{
+  "name": "synthetic-mute-status-lookup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "build": "cat ./src/header.js > synthetic.js && uglifyjs --compress --mangle -- ./src/body.js  >> synthetic.js && cat ./src/footer.js >> synthetic.js",
+    "add": "git add ./synthetic.js",
+    "echo": "echo Build: synthetic.js created!"
+  },
+  "pre-commit": [
+    "build",
+    "add",
+    "echo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "got": "^11.8.5"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "uglify-js": "^3.17.4"
+  }
+}
