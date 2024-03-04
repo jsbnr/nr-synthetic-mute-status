@@ -1,7 +1,7 @@
 // Start config
 
 const RULE_NAMES=["Your-Mute-Rule-Name-Here"]; // List of rule names (regex supported!)
-const ACCOUNT_ID=12345678;   // Your account ID to lookup mute status
+const ACCOUNT_ID=1234567;   // Your account ID to lookup mute status
 const DATACENTER="US";      // Your account data center (US/EU)
 const USER_KEY="NRAK-xxxx"; // Your (User) API key PLEASE USE A SECURE CREDENTIAL!
 
