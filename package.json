@@ -19,6 +19,7 @@
     "got": "^11.8.5"
   },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "uglify-js": "^3.17.4"
   }
 }
